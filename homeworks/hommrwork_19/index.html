@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Dancing+Script:wght@400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <title>Gender Prediction API</title>
+</head>
+
+<body>
+    <header>
+        <h2>Прогнозирование пола по имени</h2>
+    </header>
+    <main>
+        <div class="form-wrapper">
+            <form id="name-form">
+                <input type="text" id="name-input" name="name" placeholder="Enter name" required>
+                <button type="submit">Прогнозирование пола</button>
+            </form>
+        </div>
+
+        <div id="container-result" class="container-result">
+            <p id="gender-result">Результат будет отображаться здесь...</p>
+        </div>
+
+        <div id="loader" class="loader loader-hide"></div>
+    </main>
+    <footer></footer>
+</body>
+
+</html>
