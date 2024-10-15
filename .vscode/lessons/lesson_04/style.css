@@ -1,0 +1,98 @@
+/* div {
+  background-color: burlywood;
+} */
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  /* включили свойство flex для родителя */
+  display: flex;
+  padding: 40px;
+  /* свойство выравнивания по главной оси */
+  justify-content: start;
+  /* свойство выравнивания для поперечной оси */
+  align-items: center;
+  /* свойство для выбора положения главной оси */
+  flex-direction: row;
+  /*  значение промежутка между flex элементами */
+  gap: 10px;
+  width: 100%;
+  min-height: 250px;
+  background-color: rgb(195, 216, 255);
+}
+
+.container > div {
+  width: 150px;
+  height: 200px;
+  padding: 20px;
+  /* margin: 10px; */
+  background-color: rgb(255, 232, 181);
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  gap: 5px;
+}
+
+.item > h5 {
+  margin: 0;
+}
+
+
+.container2 {
+  display: flex;
+  width: 100%;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: end;
+  /* управления свойствами поперечной оси при переносе строк через flex-wrap */
+  align-content: end;
+  min-height: 500px;
+  border: 1px solid black;
+  background-color: rgb(240, 196, 255);
+}
+
+.container2 > div {
+  height: 150px;
+  width: 150px;
+  background-color: rgb(187, 255, 187);
+}
+
+.item-img {
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqoXWL8hPNe-EIE6m5y24-JRTPnp16BW3IIA&s');
+  background-position: center;
+  background-size: cover;
+}
+
+
+.flex-card {
+  width: 300px;
+  height: 400px;
+  padding: 20px;
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid;
+  border-radius: 15px;
+}
+
+/* мы можем применить свойства к нескольким селекторам - можно обратиться к ним через запятую */
+.flex-card > p, h4 {
+  margin: 0;
+}
+
+.flex-card > p {
+  font-size: 12px;
+}
+
+.flex-card > img {
+  width: 70%;
+}

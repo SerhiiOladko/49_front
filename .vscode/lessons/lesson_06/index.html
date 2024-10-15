@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Grid layout </title>
+</head>
+<body>
+  <h1>Lesson 6. Grid layout 𐄳</h1>
+  <p>Grid - это один из основных инструментов позиционирования в CSS. Дочерние элементы в grid контейнере позиционируются в сетке, которой мы задаем правила для колонок и строк (grid - сетка)</p>
+  <ul>
+    <li>grid-template-columns - шаблон-схема для построения колонок в grid</li>
+    <li>gap - промежуток между элементами</li>
+    <li>grid-auto-rows - размер добавленных строк</li>
+    <li>repeat(auto-fill, minmax(100px, 1fr)) - чейки будут растягиваться пока не получится добавить новую с минимальным размером 100px</li>
+    <li>grid-template-areas - grid схема, в которой вы можете объединять несколько ячеек в одну и группировать их, назначать в них элементы через обращение к селекторам через grid-area указав зону area в строчном значении</li>
+  </ul>
+  <div class="container-grid">
+    <div class="grid-item">1</div>
+    <div class="grid-item">2</div>
+    <div class="grid-item">3</div>
+    <div class="grid-item">4</div>
+    <div class="grid-item">5</div>
+    <div class="grid-item">6</div>
+    <div class="grid-item">7</div>
+    <div class="grid-item">8</div>
+    <div class="grid-item">9</div>
+    <div class="grid-item">10</div>
+    <div class="grid-item">11</div>
+    <div class="grid-item">12</div>
+  </div>
+  <p>С помощью grid мы можем создавать более сложные правила для переноса элементов и изменения минимального и максимального размера ячеек</p>
+  <div class="container-grid-min-max">
+    <div class="grid-item-adaptive">1</div>
+    <div class="grid-item-adaptive">2</div>
+    <!-- <div class="grid-item-adaptive">3</div>
+    <div class="grid-item-adaptive">4</div>
+    <div class="grid-item-adaptive">5</div>
+    <div class="grid-item-adaptive grid-item-six"></div>
+    <div class="grid-item-adaptive">7</div>
+    <div class="grid-item-adaptive">8</div>
+    <div class="grid-item-adaptive">9</div>
+    <div class="grid-item-adaptive">10</div>
+    <div class="grid-item-adaptive">11</div>
+    <div class="grid-item-adaptive">Twelve</div>
+    <div class="grid-item-adaptive">13</div>
+    <div class="grid-item-adaptive">14</div> -->
+  </div>
+  <p>С помощью grid мы можем группировать ячейки, объединять их и назначать им нужные элементы</p>
+  <div class="container-grid-areas">
+    <div class="top">header</div>
+    <div class="content"></div>
+    <div class="sun"></div>
+    <span class="planet">🪐</span>
+    <div class="bottom">footer</div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+/* селектор * выбирает все элементы и применяет к ним свойства по остаточному принципу */
+* {
+  color: rgb(92, 92, 92);
+}
+
+/* css селекторы по тегу */
+
+h1 {
+  /* изменили цвет */
+  color: darkslateblue;
+  /* выравняли текстовый элемент по центру */
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  /* color: rgb(255, 111, 111); */
+}
+
+/* селектор по классу */
+.blue-text {
+  color: rgb(86, 86, 255);
+}
+
+.css-heading {
+  color: darkslateblue;
+  /* толщина шрифта */
+  font-weight: bold;
+  /* размер шрифта */
+  font-size: 18px;
+}
+
+.css-link {
+  /* убрать подчеркивание */
+  text-decoration: none;
+  color: rgb(213, 153, 1);
+}
+
+.img-no-inline {
+  width: 380px;
+}
+
+
+.css-list-item {
+  /* стиль написание шрифта */
+  color: black;
+  font-style: italic;
+}
+
+/* ! класс модификатор, изменяющий стили основного класса при конфликте стилей должен быть написан ниже в css, если его стили приоритетнее */
+
+.css-priority {
+  /* включить подчеркивание */
+  text-decoration: underline;
+  color: rgb(255, 65, 65);
+}

@@ -1,0 +1,87 @@
+* {
+  /* это свойство убирает поведение padding по умолчанию: внутренние отступы не будут изменять физический размер элементов */
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  /* padding-left: 30px;
+  padding-right: 30px; */
+}
+
+header {
+  height: 100px;
+  width: 100%;
+  padding: 10px 30px;
+  background-color: rgb(255, 219, 153);
+}
+
+main {
+  padding: 0px 30px;
+}
+
+h1 {
+  margin-bottom: 25px;
+}
+
+.theme-title {
+  /* значение верхнего внешнего отступа */
+  margin-top: 0px;
+}
+
+.big-box {
+  margin-top: 30px;
+  padding-top: 60px;
+  background-color: rgb(158, 158, 255);
+  width: 300px;
+  height: 300px;
+  /* закругление краев контейнера */
+  border-radius: 20px;
+}
+
+.small-circle {
+  margin: auto;
+  height: 100px;
+  width: 100px;
+  background-color: #ffdf95;
+  /* при закруглении 50% - мы превратим квадрат в круг */
+  border-radius: 50%;
+}
+
+
+.box {
+  width: 200px;
+  height: 200px;
+}
+
+.red-box {
+  margin: 20px;
+  padding: 10px;
+  border: 1px solid rgb(63, 63, 63);
+  background-color: rgb(255, 186, 186);
+}
+
+.green-box {
+  /* мы можем указывать значения нескольких отступов по порядку через пробел: top, right, bottom, left (по часовой стрелке)  */
+  margin: 10px auto 5px;
+  border: 20px dotted violet;
+  background-color: rgb(152, 254, 152);
+  padding-left: 25px;
+}
+
+.green-box > p {
+  font-size: larger;
+}
+
+.yellow-box {
+  border: 10px dashed rgb(83, 232, 255);
+  padding: 50px;
+  background-color: rgb(255, 255, 143);
+}
+
+footer {
+  padding: 10px 30px;
+  height: 80px;
+  background-color: rgb(203, 203, 203);
+  width: 100%;
+}

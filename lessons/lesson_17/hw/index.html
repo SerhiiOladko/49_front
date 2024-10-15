@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Countdown timer</title>
+  </head>
+  <body>
+    <h1>Countdown timer</h1>
+    <span>Enter time (in seconds):</span>
+    <input type="number" id="timeInput" min="1" placeholder="Seconds" />
+    <button>Start</button>
+
+    <div id="timer">00:00</div>
+    <div id="message"></div>
+
+    <audio id="alarmSound" src="./445-it-s-the-final-countdown.mp3" preload="auto"></audio>
+    <script src="./main.js"></script>
+  </body>
+</html>

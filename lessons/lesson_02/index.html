@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- так мы подключаем css файл к html -->
+  <link rel="stylesheet" href="style.css">
+  <!-- внутренний CSS -->
+  <style>
+    h1 {
+      color: brown;
+    }
+  </style>
+  <title>CSS intro</title>
+</head>
+<body>
+  <h1>CSS intro</h1>
+  <p>Cascading Style Sheets - каскадные таблицы стилей</p>
+  <p>Свойства обращенные через селектор по тегу коснутся всех элементов этой группы</p>
+  <p class="blue-text">Если мы хотим стилизовать конкретный элемент, то мы используем селектор по классу</p>
+
+  <p class="css-heading">CSS можно подключить 3 способами:</p>
+
+  <ul>
+    <li class="css-list-item css-priority">Первый (приоритетный) - создать файл со стилями CSS</li>
+    <li class="css-list-item">Второй - внутренний CSS через тег style</li>
+    <!-- инлайновый (внутристрочный) CSS -->
+    <li class="css-list-item" style="color: rgb(154, 111, 2);">Третий - <a class="css-link" href="https://dev.to/alim1496/avoid-using-inline-css-styles-5b6p">инлайновый CSS.</a>  указываем стили внутри конкретного тега</li>
+  </ul>
+
+  <p>Пользуйтесь первым способом, но знайте о существовании остальных ⚡️</p>
+
+  <img class="img-no-inline" src="https://res.cloudinary.com/practicaldev/image/fetch/s--XTfrg1ZP--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://public-image-container.s3.ap-southeast-1.amazonaws.com/newinlines.png" alt="no-inline-css">
+
+
+
+
+</body>
+</html>

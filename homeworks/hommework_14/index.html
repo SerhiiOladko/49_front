@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+
+    <div class="container">
+        <h1>Калькулятор индекса массы тела </h1>
+        
+        <form id="bmi-form">
+            <label for="height">Рост (в см):</label>
+            <input type="number" id="height" name="height" placeholder="Введите ваш рост">
+            
+            <label for="weight">Вес (в кг):</label>
+            <input type="number" id="weight" name="weight" placeholder="Введите ваш вес">
+
+            <button type="submit">Рассчитать </button>
+        </form>
+
+        <div class="result" id="bmi-result"></div>
+        <div class="bmi-status" id="bmi-status"></div>
+    </div>
+
+    <script>
+        const form = document.getElementById('bmi-form');
+        const bmiResult = document.getElementById('bmi-result');
+        const bmiStatus = document.getElementById('bmi-status');
+
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const height = parseFloat(document.getElementById('height').value) / 100;
+            const weight = parseFloat(document.getElementById('weight').value);
+
+            if (isNaN(height) || isNaN(weight)) {
+                bmiResult.textContent = 'Пожалуйста, напишите нормально!';
+                bmiStatus.textContent = '';
+                return;
+            }
+
+            const bmi = (weight / (height * height)).toFixed(2);
+            bmiResult.textContent = `Ваш индекс массы: ${bmi}`;
+
+            let status = '';
+
+            if (bmi < 18.5) {
+                status = 'Нужно есть, а то ветер унесет';
+            } else if (bmi >= 18.5 && bmi < 24.9) {
+                status = 'Ты красава';
+            } else if (bmi >= 25 && bmi < 29.9) {
+                status = 'Нужно есть меньше! Оставь другим!?';
+            } else {
+                status = 'Вы толстый';
+            }
+
+            bmiStatus.textContent = `Заключение: ${status}`;
+        });
+    </script>
+
+</body>
+</html>

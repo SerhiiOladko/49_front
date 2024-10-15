@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <!-- 2 способ подключения JS файлов - внутри head с аттрибутом defer -->
+  <script defer src="script.js"></script>
+  <title>DOM intro</title>
+</head>
+<body>
+  <h2>Lesson 08. </h2>
+  <p id="desc">DOM - Document Object Model</p>
+  <p id="desc-info">Все элементы в на странице можно представить в виде глобального объекта document</p>
+  <p>Чтобы находить элементы в DOM нужно добавить им что-то уникальное, какую-то отличительную особенность, например класс или id:</p>
+  <ul class="method-list">
+    <li>По тегам - <span>document.getElementsByTagName()</span></li>
+    <li>По классам - <span>document.getElementsByClassName()</span></li>
+    <li>По id - <span>document.getElementById()</span> </li>
+    <li><span>document.querySelector()</span> - универсальный метод поиска. Класс уточняется через точку. ID через #. При этом в ответе придет первый элемент удовлетворяющий поиску</li>
+  </ul>
+  <div>
+    <button class="btn change-heading" id="btn-change-heading">Change heading color and size</button>
+    <button class="btn hide-list" id="btn-hide-list">Hide list</button>
+    <button class="btn create-element" id="btn-create-element">Create element</button>
+  </div>
+  <!-- 1 способ подключения JS файлы перед закрывающимся тегом body -->
+  <!-- <script src="script.js"></script> -->
+</body>
+</html>

@@ -1,0 +1,59 @@
+.method-list span {
+  color: black;
+  font-weight: bold;
+}
+
+.desc {
+  color: darkred;
+}
+
+.desc-info {
+  color: darkblue;
+}
+
+.method-list {
+  color: rgb(0, 93, 0);
+  list-style-type: none;
+}
+
+/* класс модификатор, чтобы прятать элементы */
+.hide {
+  display: none;
+}
+
+.btn {
+  border: none;
+  padding: 5px 8px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.change-heading {
+  background-color: rgb(187, 255, 187);
+}
+
+.hide-list {
+  background-color: rgb(255, 196, 196);
+}
+
+.create-element {
+  background-color: rgb(224, 224, 255);
+}
+
+/* эти свойства включаться при наведении на элемент */
+.btn:hover {
+  background-color: rgb(147, 147, 147);
+  color: white;
+}
+
+.dom-result {
+  color: rgb(252, 125, 39);
+}
+
+li::before {
+  content: '⚡️  ';
+}
+
+ul {
+  padding-left: 10px;
+}

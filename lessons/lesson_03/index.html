@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CSS box-model</title>
+  </head>
+
+  <body>
+    <!-- header - контейнер-шапка в самом начале нашей странице в котором чаще всего располагается навигационная панель -->
+    <header>
+      <span>Header</span>
+    </header>
+    <!-- main - контейнер между header и footer в котором располагается основное содержимое нашего сайта  -->
+    <main>
+      <h1>Lesson 03</h1>
+      <p class="theme-title">CSS box-model</p>
+      <p>Будем говорить про элементы контейнеры и все что с ними связано. У контейнеров есть такие составные части:</p>
+      <ul>
+        <li>Margin - внешний отступ</li>
+        <li>Border - граница элемента</li>
+        <li>Padding - внутренни отступ</li>
+        <li>Content - содержимое блока</li>
+      </ul>
+      <p>Значения для margin (аналогично для padding):</p>
+      <ul>
+        <li>margin-top - верх</li>
+        <li>margin-right - справа</li>
+        <li>margin-bottom - снизу</li>
+        <li>margin-left - слева</li>
+      </ul>
+      <div class="box red-box">
+        red-box
+      </div>
+
+      <div class="box yellow-box">
+        yellow-box
+      </div>
+      <div class="big-box">
+        <div class="small-circle"></div>
+      </div>
+      <div class="box green-box">
+        <p>green-box</p>
+      </div>
+    </main>
+    <footer>
+      footer
+    </footer>
+  </body>
+
+</html>

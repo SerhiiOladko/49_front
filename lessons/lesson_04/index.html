@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Lesson 04</h1>
+  <p>Flexbox - это гибкая технология для позиционирования элементов в CSS</p>
+  <ul>
+    <li>Чтобы "включить" flex отображение в контейнере нужно задать свойство display:flex</li>
+    <li>Justify-content - свойство выравнивания по главной оси</li>
+    <li>align-items - свойство выравнивания для поперечной оси</li>
+    <li>align-content - управления свойствами выравнивания по поперечной оси при переносе строк через flex-wrap</li>
+    <li>gap - значение промежутка между flex элементами</li>
+  </ul>
+  <h3>Пример 1:</h3>
+  <div class="container">
+    <div class="item">
+      <h5>item 1</h5>
+      <span>flex</span>
+    </div>
+    <div class="item-img"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+  </div>
+  <h3>Пример 2:</h3>
+  <!-- пример переноса внутри flex контейнера -->
+  <div class="container2">
+    <div class="container2_item">first</div>
+    <div class="container2_item"></div>
+    <div class="container2_item"></div>
+    <div class="container2_item"></div>
+    <div class="container2_item"></div>
+    <div class="container2_item"></div>
+    <div class="container2_item"></div>
+    <div class="container2_item"></div>
+    <div class="container2_item"></div>
+    <div class="container2_item">last</div>
+  </div>
+  <h3>Пример 3:</h3>
+  <div class="flex-card">
+    <h4>LENOVO V15-IJL | 15,6" | Intel N5100 | Quad-Core | 4 x 2.80 GHz | 16GB RAM | 512GB SSD </h4>
+    <p>Das Notebook verfügt über ein beeindruckendes 15,6-Zoll-Display (39,6 cm) mit Full HD-Auflösung (1920x1080 Pixel), das gestochen scharfe Bilder und klare Details liefert. Der matte Bildschirm minimiert Reflexionen und sorgt für ein angenehmes Seherlebnis, besonders bei längeren Arbeitssitzungen oder Filmabenden.</p>
+    <img src="./laptop.webp" alt="">
+  </div>
+
+</body>
+</html>

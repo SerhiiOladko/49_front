@@ -1,0 +1,35 @@
+/* ваше решение здесь */
+* {
+  box-sizing: border-box;
+}
+
+a {
+  background-color: #AEC09A;
+}
+
+button {
+  background-color: #778D45;
+  border: none;
+}
+
+.button {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  padding: 15px;
+  margin: 10px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.green {
+  padding: 14.5px;
+}
+
+.green:hover {
+  cursor: pointer;
+}
+
+.light-green:hover {
+  color: black;
+}

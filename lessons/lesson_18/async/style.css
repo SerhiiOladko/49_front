@@ -1,0 +1,5 @@
+.completed {
+    /* перечеркиваем текст, если задача выполнена */
+    text-decoration: line-through;
+  }
+  
